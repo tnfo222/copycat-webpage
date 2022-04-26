@@ -19,8 +19,8 @@ section header {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     padding: 20px;
+    justify-content: space-between;
 }
 
 section header ul {
@@ -31,9 +31,13 @@ section header ul {
 
 section header ul li {
     list-style: none;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
+section header ul:nth-child(2) li {
+    list-style: none;
+    margin-left: 20px;
+}
 section header ul li a{
     color: #202124;
     text-decoration: none;
@@ -113,22 +117,13 @@ section .main .buttons button:hover {
 
 section .main .privacySettings {
     display: flex;
-    margin-top: 30px;
-    align-content: center;
-    margin-bottom: 30px;
-    font-size: 14px;
-    align-items: center;
-
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 section .main .privacySettings .otherIcon {
-    height: 20px;
-    width: 20px;
-    margin-right: 50px;
-    padding: 20px 20px;
-    display: inline-block;
-    align-items: center;
-    border: 1px solid transparent;
+    display: flex;
+
 }
 
 section .main .privacySettings .statement {
@@ -136,5 +131,43 @@ section .main .privacySettings .statement {
     padding: 20px 20px;
     display: inline-block;
     margin-top: 10px;
-    border: 1px solid transparent;
+    font-size: 14px;
+}
+
+section .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+section .footer .row{
+    padding: 15px 25px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+}
+
+section .footer .row ul {
+    display: flex;
+}
+
+section .footer .row ul li{
+    list-style: none;
+}
+
+section .footer .row ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+
+section .footer .row ul:nth-child(2) li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 0px;
+    margin-left: 25px;
 }
